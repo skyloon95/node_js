@@ -1,0 +1,88 @@
+
+body{
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    background-color: #212574;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+header{
+    /*margin-bottom: 1rem;*/
+    margin-top: 5px;
+    margin-bottom: 5px;
+    flex-shrink: 0;
+}
+#site_title{
+    background-color: #5357AC;
+    left: 0;
+    top: 0;
+    border: 2px solid lavender;
+}
+h1{
+    /*position: absolute;*/
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3rem;
+    font-weight: lighter;
+    text-align: center;
+    color: white;
+
+}
+footer{
+    background-color: #D1D1E3;
+    /*margin-top: 0.1rem;*/
+    width: 100%;
+    margin-top:5px;
+    flex-shrink: 0;
+}
+#pageInforms{
+    padding: 20px;
+}
+.pageInforms{
+    line-height: 0.3rem;
+    font-size: 0.65rem;
+    color: #8283BF;
+    font-weight: lighter;
+    height: max-content;
+}
+main{
+    background-color: whitesmoke;
+    margin-left: 5px;
+    padding: 10px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    font-size: 0.8rem;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+}
+nav{
+    border: 2px solid lavender;
+    flex-basis: 9rem;
+    flex-shrink: 0;
+    /*align-self: start;*/
+}
+nav>ul{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    /*height: 80%;*/
+    /*flex-basis: 100px;*/
+    /*width: 15%;*/
+}
+nav li{
+    color: whitesmoke;
+    font-family: "IBM Plex Sans KR", sans-serif;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+.content{
+    display: flex;
+    flex-shrink: 1;
+}
+@media (max-width: 500px) {
+    .content{
+        flex-direction: column;
+    }
+    main{
+        margin-top: 5px;
+        margin-left: 0;
+    }
+}
